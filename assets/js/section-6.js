@@ -7,10 +7,7 @@ new Swiper(".reviews__slider", {
   },
   loop: true,
   speed: 600,
-  autoplay: {
-    delay: 5000,
-    disableOnInteraction: false,
-  },
+  autoplay: undefined,
   breakpoints: {
     0: { slidesPerView: 1, spaceBetween: 16 },
     768: { slidesPerView: 2, spaceBetween: 24 },
