@@ -1,0 +1,112 @@
+/* Стили для lazy iframe */
+.lazy-iframe {
+    background: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.lazy-iframe:hover {
+    background: #e8e8e8;
+    transform: scale(1.02);
+}
+
+/* Состояние загрузки */
+.lazy-iframe.loading {
+    background: #f9f9f9;
+    pointer-events: none;
+}
+
+.lazy-iframe.loading::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    margin: -12px 0 0 -12px;
+    border: 2px solid #13B2C7;
+    border-top: 2px solid transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+/* Состояние загружено */
+.lazy-iframe.loaded {
+    background: transparent;
+    border: none;
+    cursor: default;
+}
+
+.lazy-iframe.loaded:hover {
+    transform: none;
+}
+
+/* Состояние ошибки */
+.lazy-iframe.error {
+    background: #ffe6e6;
+    border-color: #ff9999;
+}
+
+.lazy-iframe.error::before {
+    content: 'Ошибка загрузки видео';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #cc0000;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+}
+
+/* Анимация спиннера */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Стили для lazy изображений */
+img.loading {
+    background: linear-gradient(
+        90deg,
+        #f0f0f0 25%,
+        #e0e0e0 50%,
+        #f0f0f0 75%
+    );
+    background-size: 200% 100%;
+    animation: loading 1.5s infinite;
+}
+
+img.loaded {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+img.error {
+    background: #ffe6e6;
+    border: 1px solid #ff9999;
+}
+
+@keyframes loading {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+/* Адаптивность для маленьких экранов */
+@media (max-width: 480px) {
+    .lazy-iframe::after {
+        width: 20px;
+        height: 20px;
+        margin: -10px 0 0 -10px;
+    }
+    
+    .lazy-iframe.error::before {
+        font-size: 12px;
+    }
+}
