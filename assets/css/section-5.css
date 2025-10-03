@@ -1,0 +1,164 @@
+
+.tabs {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.tab {
+    padding: 8px 18px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    margin-right: 8px;
+    cursor: pointer;
+    background: #f5f5f5;
+    transition: 0.3s;
+}
+
+.tab.active {
+    background: #00abc2;
+    color: #fff;
+    border-color: #00abc2;
+}
+
+.accordion {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 12px;
+}
+
+.accordion-header {
+    padding: 14px 18px;
+    background: #fff;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--Color-Text-100, #D4DEE1);
+
+    font-weight: 600;
+
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+
+}
+.accordion-header span {
+    /* font-size: 24px; */
+    transition: transform 0.3s ease;
+}
+.accordion-header:hover {
+    background: #f5f5f5;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    background: #fafafa;
+}
+
+.accordion-content table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.accordion-content th {
+    color: #66787D;
+
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 13px;
+    line-height: 100%;
+    letter-spacing: 0%;
+
+}
+
+.accordion-content th,
+.accordion-content td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+    font-size: 14px;
+}
+
+.accordion.open .accordion-content {
+    max-height: 500px;
+    /* Достаточно для плавного раскрытия */
+}
+
+.prices-section-5 {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xl);
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.prices-section-5-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-xl);
+}
+
+.prices-section-5-container p {
+    color: #66787D;
+
+    font-weight: 500;
+    font-style: Medium;
+    font-size: var(--font-h6-size);
+
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: bottom;
+
+}
+
+.intro-text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.prices-section-5 h2 {
+
+    font-weight: 700;
+    font-style: Bold;
+    font-size: var(--font-h3-size);
+    line-height: 114.99999999999999%;
+    letter-spacing: 0%;
+    vertical-align: bottom;
+
+}
+
+
+.switch {
+    display: inline-flex;
+    background: #f0f5f7;
+    border-radius: 25px;
+    overflow: hidden;
+    font-family: sans-serif;
+    width: fit-content;
+}
+
+.switch button {
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    background: transparent;
+    font-size: 14px;
+    color: #739398;
+    transition: 0.3s;
+    width: 200px;
+}
+
+.switch button.active {
+    background: #13B2C7;
+    color: white;
+    border-radius: 25px;
+}
+.rotate {
+    transform: rotate(180deg);
+}

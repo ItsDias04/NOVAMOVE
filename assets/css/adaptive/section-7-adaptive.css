@@ -1,0 +1,228 @@
+/* Tablet - Large (1024px - 1200px) */
+@media (max-width: 1200px) {
+    .section-7 {
+        padding-left: 4%;
+        padding-right: 4%;
+        gap: 24px;
+    }
+    
+    .section-7 h3 {
+        font-size: 32px;
+        line-height: 38px;
+    }
+    
+    .section-7 p {
+        font-size: 17px;
+        width: 70%;
+    }
+    
+    .section-7__contact-form {
+        padding: 24px;
+        gap: 16px;
+    }
+    
+    .section-7__contact-form input {
+        height: 44px;
+        font-size: 15px;
+    }
+    
+    .btn-call {
+        height: 44px;
+        font-size: 14px;
+    }
+}
+
+/* Tablet - Medium (768px - 1024px) */
+@media (max-width: 1024px) {
+    .section-7 {
+        padding-left: 3%;
+        padding-right: 3%;
+        gap: 20px;
+    }
+    
+    .section-7 h3 {
+        font-size: 28px;
+        line-height: 34px;
+    }
+    
+    .section-7 p {
+        font-size: 16px;
+        width: 80%;
+    }
+    
+    .section-7__contact-form {
+        padding: 20px;
+    }
+}
+
+/* Mobile - Large (480px - 768px) */
+@media (max-width: 768px) {
+    .section-7 {
+        padding-left: 20px;
+        padding-right: 20px;
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+    
+    .section-7__left {
+        text-align: center;
+        gap: 16px;
+    }
+    
+    .section-7 h3 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    
+    .section-7 p {
+        font-size: 15px;
+        width: 100%;
+        line-height: 1.4;
+    }
+    
+    .section-7__right {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    .section-7__contact-form {
+        padding: 20px;
+        gap: 16px;
+    }
+    
+    .section-7__contact-form input {
+        height: 48px;
+        font-size: 16px;
+        padding: 12px;
+    }
+    
+    .btn-call {
+        height: 48px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
+
+/* Mobile - Small (до 480px) */
+@media (max-width: 480px) {
+    .section-7 {
+        padding-left: 16px;
+        padding-right: 16px;
+        gap: 20px;
+    }
+    
+    .section-7__left {
+        gap: 12px;
+    }
+    
+    .section-7 h3 {
+        font-size: 22px;
+        line-height: 28px;
+    }
+    
+    .section-7 p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    
+    .section-7__right {
+        max-width: 100%;
+        border-radius: 12px;
+    }
+    
+    .section-7__contact-form {
+        padding: 16px;
+        gap: 12px;
+    }
+    
+    .section-7__contact-form input {
+        height: 44px;
+        font-size: 15px;
+        padding: 10px;
+        border-radius: 6px;
+    }
+    
+    .section-7__contact-form input::placeholder {
+        font-size: 14px;
+    }
+    
+    .btn-call {
+        height: 44px;
+        font-size: 15px;
+        border-radius: 6px;
+        padding: 12px 16px;
+    }
+}
+
+/* Mobile - Extra Small (до 375px) */
+@media (max-width: 375px) {
+    .section-7 {
+        padding-left: 12px;
+        padding-right: 12px;
+        gap: 16px;
+    }
+    
+    .section-7 h3 {
+        font-size: 20px;
+        line-height: 26px;
+    }
+    
+    .section-7 p {
+        font-size: 13px;
+    }
+    
+    .section-7__contact-form {
+        padding: 12px;
+        gap: 10px;
+    }
+    
+    .section-7__contact-form input {
+        height: 42px;
+        font-size: 14px;
+        padding: 8px;
+    }
+    
+    .section-7__contact-form input::placeholder {
+        font-size: 13px;
+    }
+    
+    .btn-call {
+        height: 42px;
+        font-size: 14px;
+        padding: 10px 14px;
+    }
+}
+
+/* Дополнительные стили для улучшения UX на мобильных */
+@media (max-width: 768px) {
+    .section-7__contact-form input {
+        /* Убираем zoom на iOS при фокусе */
+        font-size: 16px;
+    }
+    
+    /* Touch-friendly размеры */
+    .section-7__contact-form input,
+    .btn-call {
+        min-height: 44px;
+    }
+    
+    /* Улучшенные стили для фокуса на touch-устройствах */
+    .section-7__contact-form input:focus {
+        border-color: var(--Color-Brand-Green-500, #128EA8);
+        box-shadow: 0 0 0 2px rgba(18, 142, 168, 0.2);
+    }
+    
+    .btn-call:active {
+        transform: translateY(1px);
+        background: #8AAE4D;
+    }
+}
+
+/* Дополнительные стили для accessibility */
+@media (prefers-reduced-motion: reduce) {
+    .section-7__contact-form input,
+    .btn-call {
+        transition: none;
+    }
+}

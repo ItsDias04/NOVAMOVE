@@ -1,0 +1,380 @@
+/* Tablet - Large (1024px - 1200px) */
+@media (max-width: 1200px) {
+    header {
+        padding: 1rem 4%;
+    }
+    
+    header nav ul {
+        gap: 1.2rem;
+    }
+    
+    header nav a {
+        font-size: 15px;
+    }
+    
+    .contact span {
+        font-size: 15px;
+    }
+    
+    .btn-primary {
+        padding: 0.45rem 0.9rem;
+        font-size: 14px;
+    }
+    
+    /* Section 1 */
+    .section-1 {
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+    
+    .sec-container-1 {
+        height: 500px;
+        padding: 2%;
+    }
+    
+    .main-text h1 {
+        font-size: 3rem;
+    }
+    
+    .main-text p {
+        font-size: 1.1rem;
+        width: 70%;
+    }
+    
+    .main-img img {
+        max-width: 50%;
+        left: 48%;
+        top: 22%;
+    }
+}
+
+/* Tablet - Medium (768px - 1024px) */
+@media (max-width: 1024px) {
+    header {
+        padding: 0.8rem 3%;
+    }
+    
+    header nav ul {
+        gap: 1rem;
+    }
+    
+    header nav a {
+        font-size: 14px;
+    }
+    
+    .contact {
+        gap: 0.8rem;
+    }
+    
+    .contact span {
+        font-size: 14px;
+    }
+    
+    .btn-primary {
+        padding: 0.4rem 0.8rem;
+        font-size: 13px;
+    }
+    
+    /* Section 1 */
+    .section-1 {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+    
+    .sec-container-1 {
+        height: 450px;
+        flex-direction: column;
+        padding: 3%;
+    }
+    
+    .main-text {
+        max-width: 100%;
+        gap: var(--spacing-s);
+    }
+    
+    .main-text h1 {
+        font-size: 2.5rem;
+        line-height: 100%;
+    }
+    
+    .main-text p {
+        font-size: 1rem;
+        width: 80%;
+        margin-bottom: 1rem;
+    }
+    
+    .main-img img {
+        position: static;
+        max-width: 100%;
+        margin-top: 20px;
+    }
+    
+    .btn-primary-2 {
+        padding: var(--spacing-s) var(--spacing-l);
+    }
+    
+    .btn-whatsapp {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+/* Mobile - Large (480px - 768px) */
+@media (max-width: 768px) {
+    header {
+        padding: 0.8rem 20px;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    
+    header nav {
+        order: 3;
+        width: 100%;
+    }
+    
+    header nav ul {
+        justify-content: center;
+        gap: 0.8rem;
+        flex-wrap: wrap;
+    }
+    
+    header nav a {
+        font-size: 13px;
+    }
+    
+    .contact {
+        order: 2;
+        gap: 0.6rem;
+    }
+    
+    .contact span {
+        font-size: 13px;
+        display: none;
+    }
+    
+    .logo {
+        order: 1;
+    }
+    
+    /* Section 1 */
+    .section-1 {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .sec-container-1 {
+        height: auto;
+        min-height: 400px;
+        padding: 20px;
+    }
+    
+    .main-text {
+        text-align: center;
+        gap: 12px;
+    }
+    
+    .main-text h2 {
+        font-size: 16px;
+    }
+    
+    .main-text h1 {
+        font-size: 2rem;
+    }
+    
+    .main-text p {
+        font-size: 0.9rem;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    
+    .buttons {
+        justify-content: center;
+        gap: 0.8rem;
+    }
+    
+    .btn-primary-2 {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+    
+    .btn-whatsapp {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .main-img img {
+        margin-top: 16px;
+        border-radius: 12px;
+    }
+}
+
+/* Mobile - Small (до 480px) */
+@media (max-width: 480px) {
+    header {
+        padding: 0.6rem 16px;
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+    
+    header nav ul {
+        gap: 0.6rem;
+        justify-content: space-between;
+    }
+    
+    header nav a {
+        font-size: 12px;
+    }
+    
+    .contact span {
+        display: none;
+    }
+    
+    .btn-primary {
+        padding: 0.35rem 0.7rem;
+        font-size: 12px;
+    }
+    
+    /* Section 1 */
+    .section-1 {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    
+    .sec-container-1 {
+        padding: 16px;
+        border-radius: 16px;
+    }
+    
+    .main-text h2 {
+        font-size: 14px;
+    }
+    
+    .main-text h1 {
+        font-size: 1.8rem;
+        line-height: 1.1;
+    }
+    
+    .main-text p {
+        font-size: 0.85rem;
+        line-height: 1.4;
+    }
+    
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.6rem;
+    }
+    
+    .btn-primary-2 {
+        padding: 10px 16px;
+        font-size: 13px;
+        width: fit-content;
+    }
+    
+    .btn-whatsapp {
+        width: 36px;
+        height: 36px;
+    }
+}
+
+/* Mobile - Extra Small (до 375px) */
+@media (max-width: 375px) {
+    header {
+        padding: 0.5rem 12px;
+    }
+    
+    header nav ul {
+        gap: 0.4rem;
+        font-size: 11px;
+    }
+    
+    header nav a {
+        font-size: 11px;
+    }
+    
+    /* Section 1 */
+    .section-1 {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    
+    .sec-container-1 {
+        padding: 12px;
+    }
+    
+    .main-text h1 {
+        font-size: 1.6rem;
+    }
+    
+    .main-text p {
+        font-size: 0.8rem;
+    }
+    
+    .btn-primary-2 {
+        padding: 8px 14px;
+        font-size: 12px;
+    }
+    
+    .btn-whatsapp {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+/* Специальные стили для мобильного меню */
+@media (max-width: 768px) {
+    .mobile-menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+    
+    .mobile-menu-toggle:focus {
+        outline: none;
+    }
+    
+    /* Скрытие навигации на очень маленьких экранах */
+    @media (max-width: 480px) {
+        header nav ul {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0.4rem;
+            text-align: center;
+        }
+        
+        header nav li {
+            margin: 0;
+        }
+    }
+}
+
+
+/* Добавить в конец файла */
+.logo img {
+    height: 40px;
+    width: auto;
+}
+
+.mobile-menu-toggle {
+    display: none;
+}
+
+/* Улучшение для touch устройств */
+@media (hover: none) and (pointer: coarse) {
+    header nav a {
+        padding: 8px 4px;
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .btn-primary,
+    .btn-whatsapp {
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

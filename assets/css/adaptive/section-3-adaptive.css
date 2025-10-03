@@ -1,0 +1,321 @@
+/* Tablet - Large (1024px - 1200px) */
+@media (max-width: 1200px) {
+    .section-3 {
+        padding-left: 4%;
+        padding-right: 4%;
+        gap: 32px;
+    }
+    
+    .section-3 h2 {
+        font-size: 32px;
+    }
+    
+    .services-grid {
+        grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+        gap: 24px;
+    }
+    
+    .card {
+        padding: 20px;
+        gap: 16px;
+    }
+    
+    .card img {
+        height: 200px;
+    }
+    
+    .card-body h3 {
+        font-size: 18px;
+    }
+    
+    .card-body .desc {
+        font-size: 15px;
+    }
+    
+    .price-container p span {
+        font-size: 17px;
+    }
+}
+
+/* Tablet - Medium (768px - 1024px) */
+@media (max-width: 1024px) {
+    .section-3 {
+        padding-left: 3%;
+        padding-right: 3%;
+        gap: 28px;
+    }
+    
+    .section-3 h2 {
+        font-size: 28px;
+        text-align: center;
+    }
+    
+    .services-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+    }
+    
+    .card {
+        padding: 18px;
+        border-radius: 12px;
+    }
+    
+    .card img {
+        height: 180px;
+    }
+    
+    .card-body h3 {
+        font-size: 17px;
+        margin-bottom: 8px;
+    }
+    
+    .card-body .tags {
+        font-size: 13px;
+        margin-bottom: 12px;
+    }
+    
+    .card-body .desc {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+    
+    .btn {
+        padding: 8px 16px;
+        font-size: 13px;
+    }
+    
+    .price-container p {
+        font-size: 13px;
+    }
+    
+    .price-container p span {
+        font-size: 16px;
+    }
+}
+
+/* Mobile - Large (480px - 768px) */
+@media (max-width: 768px) {
+    .section-3 {
+        padding-left: 20px;
+        padding-right: 20px;
+        gap: 24px;
+    }
+    
+    .section-3 h2 {
+        font-size: 24px;
+    }
+    
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    .card {
+        padding: 16px;
+        gap: 12px;
+        border-radius: 12px;
+    }
+    
+    .card img {
+        height: 160px;
+        border-radius: 8px;
+    }
+    
+    .card-body {
+        gap: 8px;
+    }
+    
+    .card-body h3 {
+        font-size: 16px;
+        line-height: 1.3;
+    }
+    
+    .card-body .tags {
+        font-size: 12px;
+        margin-bottom: 8px;
+    }
+    
+    .card-body .desc {
+        font-size: 13px;
+        line-height: 1.5;
+        margin-bottom: 12px;
+    }
+    
+    .card-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+    
+    .btn {
+        align-self: flex-end;
+        padding: 8px 16px;
+        font-size: 13px;
+        min-width: 100px;
+    }
+    
+    .price-container p {
+        font-size: 12px;
+    }
+    
+    .price-container p span {
+        font-size: 15px;
+    }
+}
+
+/* Mobile - Small (до 480px) */
+@media (max-width: 480px) {
+    .section-3 {
+        padding-left: 16px;
+        padding-right: 16px;
+        gap: 20px;
+    }
+    
+    .section-3 h2 {
+        font-size: 22px;
+        line-height: 1.2;
+    }
+    
+    .services-grid {
+        max-width: 100%;
+        gap: 12px;
+    }
+    
+    .card {
+        padding: 12px;
+        gap: 10px;
+    }
+    
+    .card img {
+        height: 140px;
+    }
+    
+    .card-body h3 {
+        font-size: 15px;
+    }
+    
+    .card-body .tags {
+        font-size: 11px;
+        margin-bottom: 6px;
+    }
+    
+    .card-body .desc {
+        font-size: 12px;
+        line-height: 1.4;
+        margin-bottom: 10px;
+        /* Ограничиваем количество строк */
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    
+    .card-footer {
+        gap: 10px;
+    }
+    
+    .btn {
+        padding: 6px 12px;
+        font-size: 12px;
+        border-radius: 16px;
+        min-width: 90px;
+    }
+    
+    .price-container {
+        gap: 2px;
+    }
+    
+    .price-container p {
+        font-size: 11px;
+        max-width: 100px;
+    }
+    
+    .price-container p span {
+        font-size: 14px;
+        line-height: 1.2;
+    }
+}
+
+/* Mobile - Extra Small (до 375px) */
+@media (max-width: 375px) {
+    .section-3 {
+        padding-left: 12px;
+        padding-right: 12px;
+        gap: 16px;
+    }
+    
+    .section-3 h2 {
+        font-size: 20px;
+    }
+    
+    .card {
+        padding: 10px;
+        gap: 8px;
+    }
+    
+    .card img {
+        height: 120px;
+    }
+    
+    .card-body h3 {
+        font-size: 14px;
+    }
+    
+    .card-body .tags {
+        font-size: 10px;
+    }
+    
+    .card-body .desc {
+        font-size: 11px;
+        -webkit-line-clamp: 2;
+    }
+    
+    .btn {
+        padding: 5px 10px;
+        font-size: 11px;
+        min-width: 80px;
+    }
+    
+    .price-container p {
+        font-size: 10px;
+        max-width: 90px;
+    }
+    
+    .price-container p span {
+        font-size: 13px;
+    }
+}
+
+/* Дополнительные стили для улучшения UX */
+@media (max-width: 768px) {
+    .card:hover {
+        transform: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    }
+    
+    .card {
+        transition: box-shadow 0.2s ease;
+    }
+    
+    /* Touch-friendly кнопки */
+    .btn {
+        min-height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/* Для accessibility */
+@media (prefers-reduced-motion: reduce) {
+    .card {
+        transition: none;
+    }
+    
+    .card:hover {
+        transform: none;
+    }
+}

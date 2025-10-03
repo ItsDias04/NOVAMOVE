@@ -1,0 +1,225 @@
+/* Tablet - Large (1024px - 1200px) */
+@media (max-width: 1200px) {
+    .section-8 {
+        padding-left: 4%;
+        padding-right: 4%;
+        gap: 24px;
+    }
+    
+    .section-8__left img {
+        border-radius: 12px;
+    }
+    
+    .section-8__right h3 {
+        font-size: 32px;
+        line-height: 1.2;
+    }
+    
+    .section-8__right p {
+        font-size: 17px;
+        line-height: 1.3;
+    }
+    
+    .section-8__list {
+        gap: 10px;
+    }
+    
+    .section-8__list-text {
+        font-size: 17px;
+    }
+    
+    .section-8__list-icon {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+/* Tablet - Medium (768px - 1024px) */
+@media (max-width: 1024px) {
+    .section-8 {
+        padding-left: 3%;
+        padding-right: 3%;
+        gap: 20px;
+    }
+    
+    .section-8__right h3 {
+        font-size: 28px;
+    }
+    
+    .section-8__right p {
+        font-size: 16px;
+        line-height: 1.4;
+    }
+    
+    .section-8__list-text {
+        font-size: 16px;
+    }
+    
+    .section-8__list-icon {
+        width: 26px;
+        height: 26px;
+    }
+}
+
+/* Mobile - Large (480px - 768px) */
+@media (max-width: 768px) {
+    .section-8 {
+        padding-left: 20px;
+        padding-right: 20px;
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+    
+    .section-8__left {
+        order: 1;
+    }
+    
+    .section-8__left img {
+        border-radius: 12px;
+        max-height: 300px;
+        object-fit: cover;
+    }
+    
+    .section-8__right {
+        order: 2;
+        text-align: center;
+        gap: 20px;
+    }
+    
+    .section-8__right h3 {
+        font-size: 24px;
+        line-height: 1.3;
+    }
+    
+    .section-8__right p {
+        font-size: 15px;
+        line-height: 1.5;
+        text-align: left;
+    }
+    
+    .section-8__list {
+        gap: 16px;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    .section-8__list-item {
+        gap: 12px;
+        text-align: left;
+    }
+    
+    .section-8__list-text {
+        font-size: 15px;
+        line-height: 1.3;
+    }
+    
+    .section-8__list-icon {
+        width: 24px;
+        height: 24px;
+        flex-shrink: 0;
+    }
+}
+
+/* Mobile - Small (до 480px) */
+@media (max-width: 480px) {
+    .section-8 {
+        padding-left: 16px;
+        padding-right: 16px;
+        gap: 20px;
+    }
+    
+    .section-8__left img {
+        max-height: 250px;
+        border-radius: 8px;
+    }
+    
+    .section-8__right {
+        gap: 16px;
+    }
+    
+    .section-8__right h3 {
+        font-size: 22px;
+        line-height: 1.2;
+    }
+    
+    .section-8__right p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    
+    .section-8__list {
+        gap: 12px;
+        max-width: 100%;
+    }
+    
+    .section-8__list-item {
+        gap: 10px;
+    }
+    
+    .section-8__list-text {
+        font-size: 14px;
+    }
+    
+    .section-8__list-icon {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+/* Mobile - Extra Small (до 375px) */
+@media (max-width: 375px) {
+    .section-8 {
+        padding-left: 12px;
+        padding-right: 12px;
+        gap: 16px;
+    }
+    
+    .section-8__left img {
+        max-height: 220px;
+    }
+    
+    .section-8__right h3 {
+        font-size: 20px;
+    }
+    
+    .section-8__right p {
+        font-size: 13px;
+    }
+    
+    .section-8__list {
+        gap: 10px;
+    }
+    
+    .section-8__list-item {
+        gap: 8px;
+    }
+    
+    .section-8__list-text {
+        font-size: 13px;
+    }
+    
+    .section-8__list-icon {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+/* Дополнительные стили для улучшения UX */
+@media (max-width: 768px) {
+    .section-8__list-item {
+        padding: 8px;
+        border-radius: 8px;
+        transition: background-color 0.2s ease;
+    }
+    
+    .section-8__list-item:hover {
+        background-color: rgba(19, 178, 199, 0.05);
+    }
+}
+
+/* Для accessibility */
+@media (prefers-reduced-motion: reduce) {
+    .section-8__list-item {
+        transition: none;
+    }
+}

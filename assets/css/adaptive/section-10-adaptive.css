@@ -1,0 +1,10 @@
+@media (max-width: 600px) {
+    .section-10__parent {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+    .section-10__parent > div {
+        width: 100%;
+          grid-area: auto / auto / auto / auto;
+    }
+}
